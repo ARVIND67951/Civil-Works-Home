@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivilWorks-home</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    #nav-bar{
+       width: 100%;
+        display: flex;
+        margin-left: 90px;
+        margin-right: 100px;
+    }
+    nav{
+        
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        background-color: #fff;
+       
+    }
+    #nav-bar img{
+        width: 200px;
+        height: 50px;
+    }
+    #nav-bar a{
+        color: rgba(0, 0, 0, 0.644);
+        text-decoration: none;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    #nav-bar a:hover{
+        text-decoration: underline;
+        outline: invert;
+        
+    }
+    #nav-bar #link{
+        margin-top: 20px;
+        margin-left: 200px;
+    }
+    .social-whatsapp {
+    position: fixed;
+    bottom: 10%;
+    right: 0.9%;
+    z-index: 1111111111111111;
+    }
+    #about{
+        margin-left: 90px;
+        margin-right: 100px;
+        height: 500px;
+        width: auto;  
+        /* display: flex; */
+        position: relative; /* stacking context*/
+  display: inline-flex;
+ 
+ 
+        
+    }
+    #about img{
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+        
+    }
+    #container{
+        margin-top: 100px;
+        background-color: rgba(240, 248, 255, 0.836);
+        width: 400px;
+        height: 300px;
+        
+        padding: 20px;
+      
+      /* jhdvsjax */
+      position: absolute;
+  left: 350px; /* move it so we can see both */
+  top: 30px;
+  bottom: 20px;
+ 
+      
+    }
+    #container a{
+        padding: 10px;
+        border: 1px solid gray;
+        text-decoration: none;
+        color:black;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    #container a:hover{
+        background-color: rgba(255, 255, 0, 0.322);
+    }
+    #ser-container{
+        height: 310px;
+        width: 300px;
+       background-color: #ffffff8f;
+       margin-left: 10px;
+       margin-top: 30px;
+      
+
+    }
+    #ser-container img{
+        width: 100%;
+    }
+    #ser-container span{
+        display: flex;
+       
+        padding: 10px 25px 10px 25px;
+       
+        
+       
+    }
+    #ser-container span:hover{
+        text-decoration: none;
+	
+    }
+    #over-service{
+        background-color: rgba(128, 128, 128, 0.541);
+        text-align: center;
+        padding-top: 50px;
+    margin-bottom: 50px;
+    height: 900px;
+    }
+    #service-container{
+        display: flex;
+        margin-left: 30px;
+    }
+
+.span{
+  display: inline-block;
+ 
+}
+#learn-more{
+    margin-top: 70px;
+}
+#learn-more a:hover{
+    background-color: rgba(255, 255, 0, 0.473);
+}
+#why-choose{
+    height: 500px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+}
+#pragraph-section{
+    margin-left: 50px;
+    padding: 50px;
+    height: 400px;
+    width: 350px;
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;
+    color: rgba(128, 128, 128, 0.808);
+}
+#image-section img{
+    margin-left: 50px;
+    margin-top: 50px;
+    height: 400px;
+    width: 400px;
+}
+#pragraph-section input {
+    accent-color: rgba(255, 217, 0, 0.664);
+  width: 100%;
+  border: none;
+}
+#feedback-container{
+    display: flex;
+    width: 100%;
+    height: 200px;
+}
+#feedback-container #icon{
+    width: 200px;
+    height: 150px;
+    /* margin-left: 50px; */
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.589);
+    font-style: italic;
+}
+#icon img{
+    width: 80px;
+    height: 80px;
+    
+   
+}
+#connect-today{
+    margin-top: 50px;
+    width: auto;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.575);
+    text-align: center;
+    padding: 100px;
+}
+#connect-today span{
+    background-color: rgba(0, 0, 0, 0.747);
+    padding: 10px 25px 10px 25px;
+    color: #fff;
+    border: 1px #ffffff4d solid;
+    display: inline-flex;
+}
+#contact-us{
+    height: 400px;
+    width: auto;
+    background-color: #ffffffa2;
+    display: inline-flex;
+    font-style:normal;
+}
+#daitels-section{
+    width: 300px;
+    height: 200px;
+    padding: 10px;
+    text-align: left;
+    font-size: 15px;
+   
+}
+#phone{
+    display: inline-flex;
+    width: 100%;
+    height: 100px;
+   
+}
+#phone img{
+    margin-top: 30px;
+    margin-right: 10px;
+}
+#form-section{
+    width: 400px;
+    height: 300px;
+ margin-top: 20px;
+ margin-left: 50px;
+
+}
+#form-section form >input{
+  width: 80%;
+  height: 30px;
+    margin:10px ;
+}
+#form-section form{
+    width: 350px;
+    height: 330px;
+    border: 1px solid rgba(0, 0, 0, 0.527);
+    padding-top: 30px;
+    
+}
+#form-section form >button{
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    padding: 5px 20px 5px 20px;
+    margin-top: 20px;
+    margin-right: 180px;
+    cursor: pointer;
+}
+      #footer{
+            background-color: rgba(0, 0, 0, 0.555);
+        height:400px;
+        width:auto;
+        color: #fbf7f7;
+        display: flex;
+        background-size: cover;
+           
+            /* padding: 100px 100px 0 100px; */
+            
+            margin-top: 100px;
+            text-align: left;
+        }
+       
+        #div1 {
+            margin: 50px 20px 2px 50px;
+        }
+        #div1 img{
+            
+    width: 200px;
+    height: 50px;
+        }
+        #div2{
+            margin: 50px 20px 2px 20px;
+        width: 100px;
+        height: auto;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: #fbf7f7;
+            margin-left: 10px;
+        }
+        ul{
+            list-style-type: "\270D";
+            color: yellow;
+        }
+        #div3{
+            margin: 50px 0px 2px 10px;
+            width: 300px;
+            height: 200px;
+        }
+        #div4{
+            margin: 50px 0px 2px 0px;
+            width: 300px;
+            height: 200px;
+            font-size: 10px;
+            font-style: normal;
+        }
+        ol> li{
+            display: flex;
+            text-decoration: none;
+        
+            
+        }
+        #social-icon{
+        display: flex;
+        cursor: pointer;
+        margin-left: 50px;
+        }
+        #social-icon > div{
+        cursor: pointer;
+        margin-left: 20px;
+        }
+        .carousel {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+   
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  margin-top: 50px;
+
+}
+.carousel-item img {
+    width: 100%;
+    border-radius: 5px;
+   
+}
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    gap: 320%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+}
+.button:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.centered {
+    font-style:italic;
+    font-size: large;
+    color: #fbf7f7;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered_1 {
+    font-style:italic;
+    font-size: large;
+    color: #fbf7f7;
+    position: absolute;
+  text-align: center;
+  left: 120%;
+  top: 30%;
+  width: 600px;
+  height: 100px;
+  bottom: 40%;
+  
+}
+#slider-2{
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+    position: relative;
+}
+#image img{
+    width: 100%;
+    height: 400px;
+}
+#slide-container{
+    position: absolute;
+    background-color: #000000cc;
+    width: 800px;
+    height: 300px;
+    top: 200px;
+    left: 100px;
+    overflow: hidden;
+}
+.slider-inner{
+    display: flex;
+    /* transition: transform 5s ease; */
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 20px;
+    overflow: hidden;
+    
+}
+#slider-container{
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-style: italic;
+    
+}
+#slider-container1{
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-style: italic;
+    
+}
+#slider-container2{
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div id="nav-bar">
+            <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/logo-1024x344.jpg" alt="">
+            <div id="link"><a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">OurServices</a>
+                <a href="#">Gellary</a>
+                <a href="#">Contect us</a>
+            </div>
+        </div>
+        </nav>
+    <!-- slide bar 1 -->
+     
+    <div class="carousel">
+        <div class="carousel-inner" id="carousel-inner">
+            <div class="carousel-item">
+           <img src="https://www.civilworkshome.com/wp-content/uploads/slider/cache/d4d5f7929d9105689805c150b874bf4c/slider-2.jpg" alt="Slide 1">
+           <div class="centered">
+            <h1>Building with Civil Works Home</h1>
+        <p>Expert services to design, build, and enhance your home or commercial property.</p>
+        <span style="background-color: rgba(255, 255, 0, 0.226); color: white; margin-left: 10px; padding: 5px 15px 5px 15px; display: inline-flex;"><img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-18-64.png" alt="" style="height:20px;width:auto;"> <a href="tel:+91-6378287986" style="display:contents; color: #fff;">Contect Us</a></span>
+    </div>
+        </div>
+            <div class="carousel-item">
+            <img src="https://www.civilworkshome.com/wp-content/uploads/slider/cache/90e030531511ed7a7d68a4b4ecdad814/slider-1.jpg" alt="Slide 2">
+            <div class="centered_1">
+                <h1>Contact Us for Quality Services</h1>
+            <p>We’re here to answer your questions and provide the support you need for your projects.</p>
+            <span style="background-color: rgba(255, 255, 0, 0.226); color: white; margin-left: 10px; padding: 5px 15px 5px 15px; display: inline-flex;"><img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-18-64.png" alt="" style="height:20px;width:auto;"> <a href="tel:+91-6378287986" style="display:contents; color: #fff;">Contect To Team</a></span>
+        </div>    
+        </div>
+           
+        </div>
+        <div class="carousel-controls">
+            <button class="button" onclick="prevSlide()">❮</button>
+            <button class="button" onclick="nextSlide()">❯</button>
+        </div>
+    </div>
+    
+      <!-- close sidebar -->
+    <div id="about">
+        <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/sq-img-13-1-768x768.jpg" alt="">
+        <div id="container">
+<h4>About Us</h4>
+<h3>ONESTOP CIVIL WORKS SERVICES</h3>
+<p>Welcome to Rajesh Civil Works Services, a premium home construction and civil works one-stop civil service in India.
+
+    With our 25 years of working experience in building and construction services. We provide top-notch civil works services.
+    
+    Our professional team is equaled removes development our compering range of services includes.</p><br><br><br>
+<a href="https://www.civilworkshome.com/about-us/">READ MORE -></a>
+        </div>
+
+    </div>
+    <div class="social-whatsapp">
+        <div class="col mb-3">
+            <a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=916378287986');" href="https://api.whatsapp.com/send?phone=916378287986" target="_blank" style="display:contents;margin-bottom:20px;">
+    <img class="icon-shadow" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-64.png" style="height:38px;width:auto;margin-bottom:20px;"></a>
+        </div>
+        <div class="col">
+            <a href="tel:+91-6377847429" style="display:contents;">
+                <img class="icon-shadow" src="https://cdn0.iconfinder.com/data/icons/real-estate-line-color-1/256/Call-64.png" style="height:38px;width:auto;"></a>
+        </div>
+    </div>
+    <div id="over-service">
+        <h2>Our Services</h2>
+        <div id="service-container">
+            <div id="ser-container">
+                <img src="https://www.civilworkshome.com/wp-content/uploads/2024/09/construction-planning-design-768x512.jpg" alt="">
+            <h4>Civil Engineer Services
+            </h4>
+            <div class="span" style="display: inline-flex;">
+            <span style="background-color: rgba(0, 0, 0, 0.329); "> <img class="icon-shadow" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-64.png" style="height:20px;width:auto;"><a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=916378287986');" href="https://api.whatsapp.com/send?phone=916378287986" target="_blank" style=" text-decoration :none; color: #fff; ">Whatsapp</a></span> 
+            <span style="background-color: rgba(255, 255, 0, 0.548); color: #fff; margin-left: 10px;"><img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-18-64.png" alt="" style="height:20px;width:auto;"> <a href="tel:+91-6378287986" style="display:contents; color: black;">Call Now</a></span>
+            </div>
+            </div>
+            <div id="ser-container">
+                <img src="https://www.civilworkshome.com/wp-content/uploads/2024/09/architectural-engg-1-768x512.jpg" alt="">
+                <h4>Stone Installing
+                    Services
+                </h4>
+                <div class="span" style="display: inline-flex;">
+                    <span style="background-color: rgba(0, 0, 0, 0.329); "> <img class="icon-shadow" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-64.png" style="height:20px;width:auto;"><a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=916378287986');" href="https://api.whatsapp.com/send?phone=916378287986" target="_blank" style=" text-decoration :none; color: #fff; ">Whatsapp</a></span> 
+                    <span style="background-color: rgba(255, 255, 0, 0.548); color: #fff; margin-left: 10px;"><img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-18-64.png" alt="" style="height:20px;width:auto;"> <a href="tel:+91-6378287986" style="display:contents; color: black;">Call Now</a></span>
+                    </div>
+            </div>
+            <div id="ser-container">
+            <img src="https://www.civilworkshome.com/wp-content/uploads/2024/09/home_loan-768x512.jpg" alt="">
+            <h4>Home Loan/Renovation Loan Consulting
+            </h4>
+            <div class="span" style="display: inline-flex;">
+                <span style="background-color: rgba(0, 0, 0, 0.329); "> <img class="icon-shadow" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-64.png" style="height:20px;width:auto;"><a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=916378287986');" href="https://api.whatsapp.com/send?phone=916378287986" target="_blank" style=" text-decoration :none; color: #fff; ">Whatsapp</a></span> 
+                <span style="background-color: rgba(255, 255, 0, 0.548); color: #fff; margin-left: 10px;"><img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-18-64.png" alt="" style="height:20px;width:auto;"> <a href="tel:+91-6378287986" style="display:contents; color: black;">Call Now</a></span>
+                </div>
+            </div>
+        </div>
+        <div id="service-container">
+            <div id="ser-container">
+                <img src="https://www.civilworkshome.com/wp-content/uploads/2024/09/structural-engg-768x512.jpg" alt="">
+                <h4>Structural Engineering
+                </h4>
+                <div class="span" style="display: inline-flex;">
+                    <span style="background-color: rgba(0, 0, 0, 0.329); "> <img class="icon-shadow" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-64.png" style="height:20px;width:auto;"><a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=916378287986');" href="https://api.whatsapp.com/send?phone=916378287986" target="_blank" style=" text-decoration :none; color: #fff; ">Whatsapp</a></span> 
+                    <span style="background-color: rgba(255, 255, 0, 0.548); color: #fff; margin-left: 10px;"><img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-18-64.png" alt="" style="height:20px;width:auto;"> <a href="tel:+91-6378287986" style="display:contents; color: black;">Call Now</a></span>
+                    </div>
+                </div>
+                <div id="ser-container">
+                    <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/Stone-Installing-Services-768x512.jpg" alt="">
+                    <h4>Stone Installing
+                        Services
+                    </h4>
+                    <div class="span" style="display: inline-flex;">
+                        <span style="background-color: rgba(0, 0, 0, 0.329); "> <img class="icon-shadow" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-64.png" style="height:20px;width:auto;"><a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=916378287986');" href="https://api.whatsapp.com/send?phone=916378287986" target="_blank" style=" text-decoration :none; color: #fff; ">Whatsapp</a></span> 
+                        <span style="background-color: rgba(255, 255, 0, 0.548); color: #fff; margin-left: 10px;"><img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-18-64.png" alt="" style="height:20px;width:auto;"> <a href="tel:+91-6378287986" style="display:contents; color: black;">Call Now</a></span>
+                        </div>
+                    </div>
+                    <div id="ser-container">
+                        <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/Stone-Supplier-Procurement-Consulting-768x512.jpg" alt="">
+                        <h4>Stone Supplier & Procurement Consulting
+                        </h4>
+                        <div class="span" style="display: inline-flex;">
+                            <span style="background-color: rgba(0, 0, 0, 0.329); "> <img class="icon-shadow" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-64.png" style="height:20px;width:auto;"><a onclick="return gtag_report_conversion('https://api.whatsapp.com/send?phone=916378287986');" href="https://api.whatsapp.com/send?phone=916378287986" target="_blank" style=" text-decoration :none; color: #fff; ">Whatsapp</a></span> 
+                            <span style="background-color: rgba(255, 255, 0, 0.548); color: #fff; margin-left: 10px;"><img src="https://cdn3.iconfinder.com/data/icons/aami-web-internet/64/aami8-18-64.png" alt="" style="height:20px;width:auto;"> <a href="tel:+91-6378287986" style="display:contents; color: black;">Call Now</a></span>
+                            </div>
+                        </div>
+                     </div>
+   <div id="learn-more"> <a href="https://www.civilworkshome.com/our-services/" style="padding: 10px; text-decoration: none;color: rgb(128, 128, 128); border: 1px solid black; ">VIEW MORE</a>
+   </div>
+   <div id="why-choose">
+    <div id="pragraph-section">
+<h2>Why Choose Us</h2>
+<p>Delivering quality craftsmanship and reliable construction services that turn your vision into reality.</p>
+   <span>Expertise and Quality</span><br>
+   <input type="range" value="79"><br>
+   <span>Comprehensive Solutions</span><br>
+   <input type="range" value="90"><br>
+   <span>
+    Reliability and Timeliness</span><br>
+   <input type="range" value="95"><br>
+   <span>Customer Satisfaction</span><br>
+   <input type="range" value="99"><br>
+</div>
+    <div id="image-section">
+        <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/sq-img-09-1-768x768.jpg" alt="">
+    </div>
+   </div>
+   <div id="feedback-container">
+    <div id="icon">
+        <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/building.png" alt="">
+        <h1>856+</h1>
+        <p>Projects Completed</p>
+    </div>
+    <hr>
+    <div id="icon">
+        <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/smile.png " alt="">
+        <h1>100
+            %</h1>
+        <p>Client Satisfaction</p>
+    </div>
+    <hr>
+    <div id="icon">
+        <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/icon-04-1-300x300.png" alt="">
+        <h1>25+</h1>
+        <p>Years Of Experience</p>
+    </div>
+    <hr>
+    <div id="icon">
+        <div id="icon">
+            <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/team.png" alt="">
+            <h1>50+</h1>
+            <p>Professional Team</p>
+    </div>
+   </div>
+   </div>
+   <div id="connect-today">
+    <h1>Connect with Us Today</h1>
+    <p>We’re available to assist with your construction needs. Reach out for professional support.</p>
+   <span> <img src="https://cdn2.iconfinder.com/data/icons/web-design-and-development-4-12/65/154-64.png" alt="" width="20px" height="20px" ><a href="tel:+91-6378287986" style="margin-left: 15px;text-decoration: none; color: #fff;">+91-6378287986</a></span>
+   </div>
+   <div id="contact-us">
+    <div id="daitels-section">
+<h1>Contact Us</h1>
+<div id="phone">
+    <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/icon-02-300x300.png" alt="" width="50px" height="50px">
+    <span>
+        <h6>Address</h6>
+        <p>C310 C-Block, Asara Housing Society.,<br> Ajmer RD, Jaipur-302026</p>
+    </span>
+</div>
+<hr>
+<div id="phone">
+    <img src="https://cdn2.iconfinder.com/data/icons/web-design-and-development-4-12/65/154-64.png" alt="" width="50px" height="50px">
+    <span>
+        <h6>Phone</h6>
+        <p>+91-6378287986, +91-9987157391</p>
+    </span>
+</div>
+<hr>
+<div id="phone">
+    <img src="https://cdn1.iconfinder.com/data/icons/business-and-technology-1/70/emai__message__envelope__inbox_-64.png" alt="" width="50px" height="50px">
+    <span>
+        <h6>Email</h6>
+        <p>rajeshkumargaud609@gmail.com, info@civilworkshome.com</p>
+    </span>
+</div>
+    </div>
+    <div id="form-section">
+<h2>Drop Your Enquiry</h2>
+<form action="">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Phone">
+    <input type="text" placeholder="Email">
+   <textarea name="" id="" placeholder="message" style="width: 80%; height: 70px;"></textarea><br>
+<button>Submit</button>
+</form>
+    </div>
+   </div>
+   <div id="slider-2">
+    <div id="image">
+<img src="data:image/jpeg;base64,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" alt="">
+    </div>
+    <div id="slide-container">
+<div id="slider-inner" class="slider-inner">
+    <div id="slider-container">
+<img src=" https://www.civilworkshome.com/wp-content/uploads/2024/08/m-review.jpg" alt="" style="border-radius: 50%;">
+<h5 style="font-size: 15px;color: #ddd;"> I had an excellent experience with Civil Work Shome. Their team was professional, on time, and delivered high-quality results. Highly recommend for any construction needs.</h5>
+<h6 style="color: rgba(255, 255, 0, 0.699); font-size: 15px; ">Ritesh Raj</h6>
+    </div>
+    <div id="slider-container1" >
+        <img src=" https://www.civilworkshome.com/wp-content/uploads/2024/08/f-review.jpg" alt="" style="border-radius: 50%;">
+        <h5 style="font-size: 15px;color: #ddd;"> Civil Work Shome provided outstanding service. The work was done efficiently, and their attention to detail was impressive. I’m very satisfied with the final outcom</h5>
+        <h6 style="color: rgba(255, 255, 0, 0.699); font-size: 15px; ">Rohini Gunja</h6>
+            </div>
+            <div id="slider-container2">
+                <img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/review_1.jpg" alt="" style="border-radius: 50%; width: 100px; height: 100px;">
+                <h5 style="font-size: 15px;color: #ddd;">Great job by Civil Work Shome! They handled our project with expertise and care. The quality of work exceeded our expectations, and they were very responsive throughout the process.</h5>
+                <h6 style="color: rgba(255, 255, 0, 0.699); font-size: 15px; ">Anuja Shekhvat</h6>
+                    </div>
+</div>
+    </div>
+   </div>
+   <div id="footer">
+	<div id="div1">
+		<img src="https://www.civilworkshome.com/wp-content/uploads/2024/08/logo-300x90.png" alt="home-logo">
+		<p>
+			Welcome to Civil Works Home ourselves a<br>
+			premium home construction and civil works as<br>
+		one stop of the civil services in India.<br><br>
+
+            With our 25 years of working experience <br>
+			in building and construction services.
+		</p>
+	</div>
+	<div id="div2">
+		<h2>Quck Link</h2>
+		<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">About As</a></li>
+		<li><a href="#">Gallery</a></li>
+		<li><a href="#">Ouer Service</a></li>
+		<li><a href="#">About Us</a></li>
+		</ul>
+	</div>
+	<div id="div3">
+		<h2>
+			Our Services</h2>
+			<ul><li><a href="#">Stone installing <br>Services</a></li>
+			<li><a href="#"> Stone Supplier & <br>procurement consulating </a></li>
+			<li><a href="#">metarial supplier & <br>procurement consulating</a></li>
+			<li><a href="#">Waterprofing Leak & <br>diraction Service</a></li>
+			<li><a href="#">Granding and landspaching<br> service</a></li>
+			<li><a href="#">Learn More...</a></li>
+			</ul>
+	</div>
+	<div id="div4"><h1>Contect Us</h1>
+		<ol  style="color: aliceblue;"><li>
+			<img src="https://cdn4.iconfinder.com/data/icons/twitter-29/512/157_Twitter_Location_Map-64.png" alt="" width="20px" height="20px" 
+		style="margin-top: 15px;margin-right: 10px;">
+				<pre>C310 C-Block, Asara Housing Society., 
+ Ajmer RD, Jaipur-302026</pre>
+			
+		</li>
+		<li>
+			<img src="https://cdn-icons-png.flaticon.com/128/646/646094.png"  alt=""  width="20px" height="20px" style="margin-top: 15px;margin-right: 10px; color: antiquewhite;">
+				<p>rajeshkumargaund609@gmail.com</p>
+			
+		</li>
+		<li>
+			<img src="https://cdn-icons-png.flaticon.com/128/483/483947.png" alt="" width="20px" height="20px" style="margin-top: 15px;margin-right: 10px;">
+				<p>+91-6378287986, +91-997157351</p>
+			</img>
+		</li>
+		</ol>
+
+		<div id="social-icon">
+			<div id="div11"><img src="https://cdn-icons-png.flaticon.com/128/717/717392.png" alt="" width="30px" height="30px"></div>
+			<div id="div12"><img src="https://img.icons8.com/?size=50&id=118467&format=png" alt="" width="30px" height="30px"></div>
+			<div id="div13"><img src="https://cdn-icons-png.flaticon.com/128/1384/1384028.png" alt="" width="30px" height="30px"></div>
+			<div id="div14"><img src="https://cdn-icons-png.flaticon.com/128/3128/3128219.png" alt="" width="30px" height="30px"></div>
+		</div>
+	</div>
+
+</div>
+<hr >
+<p >Copyright © 2024 Civil Works Home | All Rights Reserved | Developed By : <a href="#" style="color: black;color: rgb(58, 58, 37);">MaxFizz</a></p>
+	</footer>
+    <script src="script.js"></script>
+</body>
+</html>
